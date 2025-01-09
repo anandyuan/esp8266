@@ -1,0 +1,10 @@
+/gpio2?state    获取gpio2的高低电平，返回0,1
+/gpio2?state=0    设置gpio2的高低电平为低电平
+
+/gpio2?pwm    获取gpio2的占空比，返回1-1023
+/gpio2?pwm=512    设置gpio2的占空比512
+
+/gpio2?timing=30 设置30s后翻转gpio口高低电平
+/gpio2?delay=1736428468 设置到达时间戳1736428468对应的时间后翻转gpio口高低电平，不能晚于当前时间
+
+/?localtime=1736429468 上传本地时间的接口功能
