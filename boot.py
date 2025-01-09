@@ -119,9 +119,12 @@ def handle_request(conn, request):
 
 # 主函数
 def main():
+    ap = network.WLAN(network.AP_IF)
+    
     wlan = connect_wifi()
     if wlan and wlan.isconnected():
         print("Device is in WiFi mode.")
+        ap.active(False)
     else:
         start_ap_mode()
 
